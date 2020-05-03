@@ -1,0 +1,60 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.txt {
+	width: 365px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: centr;
+	align-items: flex-start;
+	border: 1px solid black;
+	margin-top: 50px;
+	padding: 50px 80px;
+	background-color: rgb(242, 238, 242);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+textarea {
+	resize: none;
+	width: 200px;
+}
+
+.indent {
+	margin-top: 15px;
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+}
+
+#bgcolorYes {
+	background-color: rgb(87, 87, 87);
+}
+
+#bgcolorNo:checked ~ body {
+	background-color: white;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 777px;
+	margin-top: 30px;
+	margin-bottom: 300px;
+	border-top: 1px solid gray;	
+}
