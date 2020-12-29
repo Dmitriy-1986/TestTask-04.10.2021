@@ -32,12 +32,14 @@
       font-style: italic;
   }
 
- .call>a {
+  .call>a {
      text-align: center;
   }
+
   .about-me {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
 
       margin: 10px 0 0 0;
@@ -51,25 +53,6 @@
       text-indent: 1.5em;
       width: 100%;
   }
-
-  .box-column {
-      display: flex;
-      flex-direction: column;
-  }
-
- .box-column-center {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-  }
-  
- .aln-itms-center {
-       align-items: center;
- }
-
- .aln-itms-start {
-       align-items: flex-start;
- }
 
   .about-me_respect {
      font-style: italic;
@@ -86,7 +69,7 @@
    <span class="call">
       <a title="Phone" href="tel:+380660607671 ">Позвонить мне!</a>
   </span>
- <div class="about-me box-column-center aln-itms-center">
+ <div class="about-me">
 
    <p class="about-me_text">
      О себе коротко и ясно, начинающий бизнесмен 
@@ -106,7 +89,8 @@
    <p/>
 
    <p class="about-me_text">
-     По всем вопросам обращайтесь в любое удобное время, с любой точки мира! 😄
+     По всем вопросам обращайтесь в любое удобное время, 
+     с любой точки мира, ведь для бизнеса у меня нет границ! 
    <p/>
 
    <p class="about-me_text">
