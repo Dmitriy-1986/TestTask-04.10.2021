@@ -141,7 +141,11 @@
 </footer>
 </main>
 
-<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
-<script>paypal.Buttons().render('body');</script>
+   <script>
+            window.paypalLoadScript({ 'client-id': 'sb' })
+                .then(paypal => {
+                    paypal.Buttons().render('#paypal-buttons');
+                });
+   </script>
  </body>
 </html>
