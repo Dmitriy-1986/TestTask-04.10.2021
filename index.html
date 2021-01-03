@@ -9,6 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
 
  <style>
+  /* Popup*/
+  #tooltip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+   /* End popup */
+
   body {
      background: linear-gradient(to right, #F6EFD2, #CEAD78);
      font-family: 'Jura', sans-serif; 
@@ -98,9 +108,10 @@
 <body>
  <main>
   <h1>Привет  мир!<br/> <span class="col-red">⚜️ Дима Сегеда </span>на связи!</h1>
-   <span class="call">
-      <a title="Phone" href="tel:+380660607671 ">Позвонить мне!</a>
-  </span>
+   
+   <button id="button" aria-describedby="tooltip" class="call" ><a title="Phone" href="tel:+380660607671 ">Позвонить мне!</a></button>
+   <div id="tooltip" role="tooltip">I'm a tooltip</div>
+   
  <div class="about-me">
 
    <p class="about-me_text">
@@ -137,10 +148,24 @@
  </div>
 <div id="paypal-buttons"></div>
 <footer>
-<p>© 2020, Все права защищены! 🙂</p>
+<p>© 2020, Все права защищены! </p>
 </footer>
 </main>
 
+
+
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+   <script>
+     const button = document.querySelector('#button');
+     const tooltip = document.querySelector('#tooltip');
+
+     // Pass the button, the tooltip, and some options, and Popper will do the
+     // magic positioning for you:
+     Popper.createPopper(button, tooltip, {
+       placement: 'right',
+    });
+   </script>
+   <!--end tesat popup -->
    <script>
             window.paypalLoadScript({ 'client-id': 'sb' })
                 .then(paypal => {
