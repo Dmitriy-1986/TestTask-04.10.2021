@@ -108,10 +108,16 @@
 <body>
  <main>
   <h1>Привет  мир!<br/> <span class="col-red">⚜️ Дима Сегеда </span>на связи!</h1>
-   
-   <button id="button" aria-describedby="tooltip" class="call" ><a title="Phone" href="tel:+380660607671 ">Позвонить мне!</a></button>
+
+   <button id="myButton">
+     <a href="tel:+380660607671 ">Позвонить мне!</a>
+   </button>
+
+ <!--
+   <button id="button" aria-describedby="tooltip" class="call" ></button>
    <div id="tooltip" role="tooltip">I'm a tooltip</div>
-   
+  -->
+
  <div class="about-me">
 
    <p class="about-me_text">
@@ -154,7 +160,14 @@
 
    <script src="https://unpkg.com/@popperjs/core@2"></script>
    <script src="https://unpkg.com/tippy.js@6"></script>
-
+   <script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('#myButton', {
+        content: 'Кликнув по ссылке на кнопке вы сможете позвонить на мой мобильный номер телефона!',
+      });
+    </script>
+  
    <!--popup-->
    <!--<script src="https://unpkg.com/@popperjs/core@2"></script>
    <script>
