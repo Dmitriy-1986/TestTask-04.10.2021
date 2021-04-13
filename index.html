@@ -1,192 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>$</title>
 
-<!--<link rel="stylesheet" href="styles/style.css">-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <style>
-  /* Popup*/
-  #tooltip {
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 13px;
-  }
-   /* End popup */
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  body {
-     background: linear-gradient(to right, #F6EFD2, #CEAD78);
-     font-family: 'Jura', sans-serif; 
-  }
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
 
-  main {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: center;
-     height: 100vh;
-     margin-top: 20px;
-  }
-
-  h1 {
-     text-align: center;
-   }
-  /* @media (max-width: 600px) {
-      h1 {
-          font-size: 5em;
-      }
-  }*/
-
-  .col-red {
-      color: red;
-   }
-
-  .call {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      font-style: italic;
-  }
-
-  .call>a {
-     text-align: center;
-  }
-
-  /*@media (max-width: 600px) {
-      .call>a {
-          font-size: 5em;
-      }
-  }*/
-
-  .about-me {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      margin: 10px 0 0 0;
-      padding: 10px;
-      border-radius:3px;
-      border: .7px solid grey;
-      width: 70%;
-   }
-  
-  .about-me_text {
-      text-indent: 1.5em;
-      width: 100%;
-  }
-
-  /*@media (max-width: 600px) {
-      .about-me>p {
-          font-size: 3em;
-      }
-  }*/
-
-  .border-red {
-      border: .1px solid red;
-      padding: 5px;
-      color: red;
-   }
-
-  .about-me_respect {
-     font-style: italic;
-  }
-  
-  footer {
-     width: 70%;
-  }
- </style>
-<script src="https://unpkg.com/@paypal/paypal-js/dist/paypal.browser.min.js"></script>
-    
-</head>
-<body>
- <main>
-  <h1>Привет  мир!<br/> <span class="col-red">⚜️ Дима Сегеда </span>на связи!</h1>
-
-   <button id="myButton">
-     <a href="tel:+380660607671 ">Позвонить мне!</a>
-   </button>
-
- <!--
-   <button id="button" aria-describedby="tooltip" class="call" ></button>
-   <div id="tooltip" role="tooltip">I'm a tooltip</div>
-  -->
-
- <div class="about-me">
-
-   <p class="about-me_text">
-     О себе коротко и ясно, начинающий бизнесмен 
-     с физической и юридической подготовкой.
-   </p>
-
-   <p class="about-me_text">
-     Для сотрудничества,
-     тебе стоит всего лишь сделать заказ  и
-     вся необходимая продукция прийдёт в указаное
-     место и ровно в срок.
-   </p>
-
-   <p class="about-me_text">
-     В списке предлагаемых товаров мировые бренды 
-     <b>adidas</b>, <b>nike</b>, <b>puma</b>, <b>reebok</b> и другие.
-   <p/>
-
-   <p class="about-me_text border-red">
-     Если остались вопросы, обращайтесь ко мне в любое удобное
-     для Вас время, с любой точки мира, ведь для бизнеса у меня нет границ! 
-   <p/>
-
-   <p class="about-me_text">
-    Мой мобильный номер телефона: 380660607671 
-   </p>
-
-   <p class="about-me_text">
-     <span class="about-me_respect">С уважением,
-     <span class="col-red">Дима Сегеда!</span></span>
-   </p>
-
- </div>
-<div id="paypal-buttons"></div>
-<footer>
-<p>© 2020, Все права защищены! </p>
-</footer>
-</main>
-
-   <script src="https://unpkg.com/@popperjs/core@2"></script>
-   <script src="https://unpkg.com/tippy.js@6"></script>
-   <script>
-      // With the above scripts loaded, you can call `tippy()` with a CSS
-      // selector and a `content` prop:
-      tippy('#myButton', {
-        placement: 'bottom',
-        content: 'Кликнув по ссылке на кнопке вы сможете позвонить на мой мобильный номер телефона!',
-      });
-    </script>
-  
-   <!--popup-->
-   <!--<script src="https://unpkg.com/@popperjs/core@2"></script>
-   <script>
-     const button = document.querySelector('#button');
-     const tooltip = document.querySelector('#tooltip');
-
-     // Pass the button, the tooltip, and some options, and Popper will do the
-     // magic positioning for you:
-     Popper.createPopper(button, tooltip, {
-       placement: 'right',
-    });
-   </script>-->
-   <!--end tesat popup -->
-   <script>
-            window.paypalLoadScript({ 'client-id': 'sb' })
-                .then(paypal => {
-                    paypal.Buttons().render('#paypal-buttons');
-                });
-   </script>
- </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
+      
+
+
+  
+  
+
+
+ 
+
+
+
