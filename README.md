@@ -85,7 +85,7 @@ sudo chmod a+x script.sh
         w — право на запись.<br>
 <pre>
 cd/var/www/html
-chmod u{www-data}g{www-data}=rw,o= filename 
+chmod u{www-data}g{www-data}=rw,o= images
 </pre>
     </li>
     <li>
