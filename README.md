@@ -93,7 +93,7 @@ sudo chmod u www-data g www-data=rw,o= /var/www/html/images
     </li>
     <li>
         6. Удалите все содержимое в файле access.txt не удаляя сам файл?<br>
-        - Используя команду cat стераем сдержимое файла.<br>
+        - Используя команду cat /dev/null стераем сдержимое файла.<br>
 <pre>
 cd/var/www/html/logs
 cat /dev/null > access.txt
