@@ -1,8 +1,5 @@
-
-https://dmitriy-1986.github.io/TestTask-04.10.2021/
-
 <h1>
-    Тестовое задание набора (04.10.2021) MERN   
+    <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/">Тестовое задание набора (04.10.2021) MERN </a>  
 </h1>
 <hr>
 <h2>
