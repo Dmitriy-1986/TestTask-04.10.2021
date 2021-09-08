@@ -94,3 +94,6 @@ sudo chmod a+x script.sh
          <pre>[Enter]</pre>
     </li>
 </ul>
+<h2>
+    === GIT внесение изменений ===
+</h2>
