@@ -93,8 +93,11 @@ sudo chmod u www-data g www-data=rw,o= /var/www/html/images
     </li>
     <li>
         6. Удалите все содержимое в файле access.txt не удаляя сам файл?<br>
-        ?<br>
-        <pre> [Enter]</pre>
+        - Используя команду cat стераем сдержимое файла.<br>
+<pre>
+cd/var/www/html/logs
+cat /dev/null > access.txt
+</pre>
     </li>
     <li>
         7. Выведите список файлов в папке images размер которых более 2 мегабайт?<br>
