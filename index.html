@@ -45,23 +45,23 @@
     <li>
         1. Перейдите в папку html и выведите список всех папок (без файлов)? <br>
         - пишется команда cd, а затем путь, куда нужно перейти. <br>
-<pre>cd/var/www/html</pre>
+<pre  class="badge badge-secondary">cd/var/www/html</pre>
         - пишется команда ls, отобразится содержимое текущей директории. <br>
-<pre>ls</pre>
+<pre  class="badge badge-secondary">ls</pre>
     </li>
     <li>
         2. Удалите пустые строки из файла error.txt?<br>
         - пишется команда sed, для удаления пустых строк в файле,<br> -i используется
         для воздействия на файл,<br> ^ - это начало строки,<br> $ - это конец строки,<br>
         d - удалить, если есть пустая строка<br>
-<pre> sed -i "/^$/d" error.txt</pre>
+<pre  class="badge badge-secondary"> sed -i "/^$/d" error.txt</pre>
     </li>
     <li>
         3. Выведите список файлов с расширением .jpg в папке images?<br>
         - Переходим в каталог images, пишется команда ls, * знак сопоставляет все файлы,
         точка представляет текущий каталог,  расширение jpg ( подстановка ) к файлам 
         между фигурными скобками 
-<pre> 
+<pre  class="badge badge-secondary"> 
 cd/var/www/html/images
 ls *.{jpg}
 </pre>
@@ -70,24 +70,24 @@ ls *.{jpg}
         4. Напишите bash скрипт который переименует все файлы в папке logs с .txt на .log ?<br>
         - пишется команда nano для использования редактора командной строки и создаем файл скрипта
         с названием script.sh, sh - расширение bash файлов.<br>
-<pre>        
+<pre  class="badge badge-secondary">        
 nano script.sh     
 </pre>
 - сообщаем shell интерпретировать сценарий bash при выполнении.        
-<pre>         
+<pre  class="badge badge-secondary">         
 #!/bin/bash        
 </pre>
 - Переходим в каталог logs, создаем цикл for, который перебирает список всех файлов .txt на .log., 
 что применяет к каждому элементу списка и перемещает файл в новый, заменяя его .txt на .log, а деталь ${file%.txt}
 использует расширение параметра оболочки, чтобы удалить .txt часть из имени файла, done указывает конец сегмента петли.
-<pre>
+<pre  class="badge badge-secondary">
 cd/var/www/html/logs
 for f in *.txt; do
     mv -- "$f" "${f%.txt}.log"
 done       
 </pre>  
 - для манипуляций с файлом, добавляем файлу script.sh приоритет доступа - x      
-<pre>         
+<pre  class="badge badge-secondary">         
 sudo chmod a+x script.sh       
 </pre>        
     </li>
@@ -101,14 +101,14 @@ sudo chmod a+x script.sh
         a — все пользователи.<br><br>
         r — право на чтение данных.<br>
         w — право на запись.<br>
-<pre>
+<pre  class="badge badge-secondary">
 sudo chmod u www-data g www-data=rw,o= /var/www/html/images
 </pre>
     </li>
     <li>
         6. Удалите все содержимое в файле access.txt не удаляя сам файл?<br>
         - Используя команду cat /dev/null стераем сдержимое файла.<br>
-<pre>
+<pre  class="badge badge-secondary">
 cd/var/www/html/logs
 cat /dev/null > access.txt
 </pre>
@@ -124,7 +124,7 @@ cat /dev/null > access.txt
         k — в килобайтах<br>
         M — в мегабайтах<br>
         G — в гигабайтах<br>
-<pre>
+<pre  class="badge badge-secondary">
 $ find /var/www/html/images -size +2M
 </pre>
     </li>
