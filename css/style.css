@@ -4,6 +4,14 @@ body {
   color: #F2F3F4;
 }
 
+a {
+  text-decoration: none;
+}
+
+hr {
+ border-color: #F2F3F4; 
+}
+
 pre {
   color: #00ffff;  
 }
