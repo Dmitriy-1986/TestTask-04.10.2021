@@ -185,7 +185,7 @@ git commit -m "сообщение"
   &lt;head &gt;
     &lt;!-- Meta tags --&gt;
     &lt;meta charset="utf-8" &gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
 
     &lt;!-- CSS style --&gt;
     &lt;link href="./assets/CSS/style.css" rel="stylesheet"&gt;
