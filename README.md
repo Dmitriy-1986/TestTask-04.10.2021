@@ -180,7 +180,8 @@ git commit -m "сообщение"
 </h2>
 1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
 <pre>
-<body
-
-</body>
+<code>
+<html>
+</html>
+</code>
 </pre> 
