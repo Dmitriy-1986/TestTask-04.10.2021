@@ -196,6 +196,6 @@ git commit -m "сообщение"
             &lt;aside>&lt;/aside>
         &lt;/main>
         &lt;footer>&lt;/footer>
-    </body>
+    &lt;/body>
 &lt;/html&gt;  
 </pre> 
