@@ -192,11 +192,8 @@ git commit -m "сообщение"
         &lt;header> &lt;/header>
         &lt;nav> &lt;/nav>
         &lt;main>
-            &lt;article>
-
-            </article>
-            <aside>
-            </aside>
+            &lt;article></article>
+            <aside></aside>
         </main>
         <footer> </footer>
     </body>
