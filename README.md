@@ -181,6 +181,23 @@ git commit -m "сообщение"
 1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
 <pre>
 <code>
-  
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+  &lt;head &gt;
+    &lt;!-- Meta tags --&gt;
+    &lt;meta charset="utf-8" &gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+    &lt;!-- CSS style --&gt;
+    &lt;link href="./assets/CSS/style.css" rel="stylesheet"&gt;
+
+    &lt;title &gt;Заголовок &lt;/title&gt;
+ &lt;/head&gt;
+    &lt;body&gt;    
+
+       &lt;!-- JavaScript --&gt;
+       &lt;script src="./assets/JavaScript/scripts.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;  
 </code>
 </pre> 
