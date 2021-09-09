@@ -3,3 +3,7 @@ body {
   background-attachment: fixed;
   color: #F2F3F4;
 }
+
+pre {
+  color: #F2F3F4;  
+}
