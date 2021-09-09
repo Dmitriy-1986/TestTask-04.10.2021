@@ -1,5 +1,5 @@
 <h1>
-    <a target="_blank" href="https://sharing.clickup.com/t/h/11m9me5/ZZ3LLDGNAGTKLSG">Тестовое задание набора (04.10.2021) MERN </a>  
+    <a href="https://sharing.clickup.com/t/h/11m9me5/ZZ3LLDGNAGTKLSG">Тестовое задание набора (04.10.2021) MERN </a>  
 </h1>
 
 https://dmitriy-1986.github.io/TestTask-04.10.2021/
