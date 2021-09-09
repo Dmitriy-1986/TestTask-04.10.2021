@@ -175,5 +175,12 @@ git commit -m "сообщение"
     </li>
     
   </ol>
+<h2>
+    === CSS, HTML ===
+</h2>
+1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
+<pre>
+<body
 
-
+</body>
+</pre> 
