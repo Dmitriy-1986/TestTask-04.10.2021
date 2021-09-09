@@ -190,8 +190,8 @@ git commit -m "сообщение"
  &lt;/head&gt;
     &lt;body&gt;    
 
-       &lt;!-- JavaScript --&gt;
-       &lt;script src="./assets/JavaScript/scripts.js"&gt;&lt;/script&gt;
+      
+       
     &lt;/body&gt;
 &lt;/html&gt;  
 </pre> 
