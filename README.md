@@ -181,9 +181,8 @@ git commit -m "сообщение"
 1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
 <pre>
 &lt;!DOCTYPE html&gt;
-&lt;html lang="ru"&gt;
-  &lt;head &gt;
-    &lt;!-- Meta tags --&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
     &lt;meta charset="utf-8" &gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
     &lt;title &gt;Заголовок &lt;/title&gt;
