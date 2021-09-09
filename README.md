@@ -186,6 +186,9 @@ git commit -m "сообщение"
     &lt;meta charset="utf-8" &gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
     &lt;title &gt;Заголовок &lt;/title&gt;
+    &lt;style>
+    
+    &lt;/style>
  &lt;/head&gt;
     &lt;body&gt;    
         &lt;header>HEADER&lt;/header>
