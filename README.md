@@ -187,10 +187,17 @@ git commit -m "сообщение"
     &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
     &lt;title &gt;Заголовок &lt;/title&gt;
     &lt;style>
-    
-    &lt;/style>
+        #page {
+              display: grid;
+              width: 100%;
+              grid-template: [header-left] "head head" 30px [header-right]
+                             [main-left]   "nav  main" 1fr  [main-right]
+                             [footer-left] "nav  foot" 30px [footer-right]
+                             / 120px 1fr;
+            }
+    </style>
  &lt;/head&gt;
-    &lt;body&gt;    
+    &lt;body id="page"&gt;    
         &lt;header>HEADER&lt;/header>
         &lt;nav>NAVIGATION&lt;/nav>
         &lt;main>
