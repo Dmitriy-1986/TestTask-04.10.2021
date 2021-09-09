@@ -191,6 +191,6 @@ git commit -m "сообщение"
     &lt;body&gt;    
 
  
-    &lt; /body &gt;
+    </body>
 &lt;/html&gt;  
 </pre> 
