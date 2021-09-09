@@ -190,8 +190,7 @@ git commit -m "сообщение"
  &lt;/head&gt;
     &lt;body&gt;    
 
-      
-       
-    &lt;/body&gt;
+ 
+    &lt; /body &gt;
 &lt;/html&gt;  
 </pre> 
