@@ -180,7 +180,6 @@ git commit -m "сообщение"
 </h2>
 1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
 <pre>
-<code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="ru"&gt;
   &lt;head &gt;
@@ -199,5 +198,4 @@ git commit -m "сообщение"
        &lt;script src="./assets/JavaScript/scripts.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;  
-</code>
 </pre> 
