@@ -188,13 +188,13 @@ git commit -m "сообщение"
     &lt;title &gt;Заголовок &lt;/title&gt;
  &lt;/head&gt;
     &lt;body&gt;    
-        &lt;header>&lt;/header>
-        &lt;nav>&lt;/nav>
+        &lt;header>HEADER&lt;/header>
+        &lt;nav>NAVIGATION&lt;/nav>
         &lt;main>
-            &lt;article>&lt;/article>
-            &lt;aside>&lt;/aside>
+            &lt;article>CONTENT&lt;/article>
+            &lt;aside>SIDEBAR&lt;/aside>
         &lt;/main>
-        &lt;footer>&lt;/footer>
+        &lt;footer>FOOTER&lt;/footer>
     &lt;/body>
 &lt;/html&gt;  
 </pre> 
