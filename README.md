@@ -189,10 +189,10 @@ git commit -m "сообщение"
     &lt;title &gt;Заголовок &lt;/title&gt;
  &lt;/head&gt;
     &lt;body&gt;    
-        <header> </header>
-        <nav> </nav>
-        <main>
-            <article>
+        &lt;header> &lt;/header>
+        &lt;nav> &lt;/nav>
+        &lt;main>
+            &lt;article>
 
             </article>
             <aside>
