@@ -1,1 +1,7 @@
-
+@import url('./main.css');
+@import url('./bloks/header.css');
+@import url('./bloks/nav.css');
+@import url('./bloks/content-conteiner.css');
+@import url('./bloks/content.css');
+@import url('./bloks/sidebar.css');
+@import url('./bloks/footer.css');
