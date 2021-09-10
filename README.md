@@ -178,6 +178,6 @@ git commit -m "сообщение"
 <h2>
     === CSS, HTML ===
 </h2>
-1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png | <a href="layout.html">See Layout</a>
+1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png | <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/layout.html">See Layout</a>
 2. 
 
