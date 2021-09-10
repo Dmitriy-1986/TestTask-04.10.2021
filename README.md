@@ -178,33 +178,6 @@ git commit -m "сообщение"
 <h2>
     === CSS, HTML ===
 </h2>
-1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png 
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8" &gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
-    &lt;title &gt;Заголовок &lt;/title&gt;
-    &lt;style>
-        #page {
-              display: grid;
-              width: 100%;
-              grid-template: [header-left] "head head" 30px [header-right]
-                             [main-left]   "nav  main" 1fr  [main-right]
-                             [footer-left] "nav  foot" 30px [footer-right]
-                             / 120px 1fr;
-            }
-    </style>
- &lt;/head&gt;
-    &lt;body id="page"&gt;    
-        &lt;header>HEADER&lt;/header>
-        &lt;nav>NAVIGATION&lt;/nav>
-        &lt;main>
-            &lt;article>CONTENT&lt;/article>
-            &lt;aside>SIDEBAR&lt;/aside>
-        &lt;/main>
-        &lt;footer>FOOTER&lt;/footer>
-    &lt;/body>
-&lt;/html&gt;  
-</pre> 
+1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png | <a href="layout.html">See Layout</a>
+2. 
+
