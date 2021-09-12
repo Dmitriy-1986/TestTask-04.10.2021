@@ -179,5 +179,6 @@ git commit -m "сообщение"
     === CSS, HTML ===
 </h2>
 1. Создайте такой Layout https://i.imgur.com/MzT0cmR.png | <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/layout.html">See Layout</a>
-2. 
+2. Создайте анимацию "Квадрат по центру окна, вращается вокруг своей оси и меняет цвет с красного на оранжевый затем на зеленый"
+3. <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/baner.html">Посмотреть баннер с текстом</a>
 
