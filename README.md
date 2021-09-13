@@ -182,6 +182,7 @@ git commit -m "сообщение"
 2. <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/animation.html">Посмотреть - квадрат по центру окна, вращается вокруг своей оси и меняет цвет;</a><br>
 3. <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/baner.html">Посмотреть баннер с текстом;</a><br>
 4. <a href="https://dmitriy-1986.github.io/TestTask-04.10.2021/form.html">Страница регистрации.</a><br>
+
 <h2>
     === JS логика ===
 </h2>
