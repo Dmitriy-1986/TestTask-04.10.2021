@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        let root = document.querySelector('#root');
+        let title = document.createElement('h1');
+        title.innerHTML = "JavaScript";
+        root.append(title);
+
+        //1. Напишите функцию deepEqual чтоб она проверяла что два объекта идентичны.
+        function deepEqual(user1, user2) {
+            if (JSON.stringify(user1) === JSON.stringify(user2)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log('1. Напишите функцию deepEqual чтоб она проверяла что два объекта идентичны');
+        console.log(deepEqual({ name: 'test' }, { name: 'test' }));
+        console.log(deepEqual({ name: 'test' }, { name: 'test1' }));
+        console.log(deepEqual({ name: 'test' }, { name: 'test', age: 10 }));
+
+        //2. Напишите функцию chunkArray которая разбивает массив на подмассивы на заданное количество элементов. Пример:
+        function chunkArray(arr, chunkSize) {
+            const res = [];
+            for (let i = 0; i < arr.length; i += chunkSize) {
+                const chunk = arr.slice(i, i + chunkSize);
+                res.push(chunk);
+            }
+            return res;
+        }
+        console.log('2. Напишите функцию chunkArray которая разбивает массив');
+        console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8], 3));
+
+        /* 3. Напишите функцию обертку которая на вход принимает асинхронный метод
+        и массив аргументов а отдает нам Promise с результатом.Пример: */
+        console.log('3. Напишите функцию обертку');
+        console.log(null);
+
+        /*  4. Напишите метод firstUnique который возвращает первый уникальный элемент в массиве. Пример:  */
+        //console.log(firstUnique([1,2,3,2,1,3,4,5,5]) 
+        console.log('4. Напишите метод firstUnique');
+
+        const firstUnique = [1, 2, 3, 2, 1, 3, 4, 5, 5];
+        let r = {};
+        firstUnique.map(a => r[a] = (r[a] || 0) + 1)
+        var res = firstUnique.find(a => r[a] === 1)
+        console.log(res);
+
+        //5. Напишите метод arrayToObject который возвращать объект(использовать рекурсию).
+
+        console.log('5. Напишите метод arrayToObject который возвращать объект(использовать рекурсию)');
+        var arr = [['name', 'developer'], ['age', 5], ['skills', [['html', 4], ['css', 5], ['js', 5]]]];
+        const obj = Object.fromEntries(arr);
+        console.log(obj);
+
+        //6. Написать метод getBase64FromUrl 
+        //который конвертирует картинку в строку base64 
+        //(метод должен быть реализован с помощью Promise).
+        console.log('6. Написать метод getBase64FromUrl');
+
+        function getBase64FromImageUrl(url) {
+            var img = new Image();
+
+            img.setAttribute('crossOrigin', 'anonymous');
+
+            img.onload = function () {
+                var canvas = document.createElement("canvas");
+                canvas.width = this.width;
+                canvas.height = this.height;
+
+                var ctx = canvas.getContext("2d");
+                ctx.drawImage(this, 0, 0);
+
+                var dataURL = canvas.toDataURL("image/png");
+
+                console.log(dataURL.replace(/^data:image\/(png|jpg);base64,/, ""));
+            };
+
+            img.src = url;
+        }
+        getBase64FromImageUrl('https://lh3.googleusercontent.com/i7cTyGnCwLIJhT1t2YpLW-zHt8ZKalgQiqfrYnZQl975-ygD_0mOXaYZMzekfKW_ydHRutDbNzeqpWoLkFR4Yx2Z2bgNj2XskKJrfw8');
+
+        //7. Написать обратный метод(см. задачу 5) objectToArray который из объекта создаст массив. 
+        console.log('7. Написать обратный метод objectToArray который из объекта создаст массив');
+
+        var object = {
+            name: 'developer',
+            age: 5,
+            skills: {
+                html: 4,
+                css: 5,
+                js: 5
+            }
+        };
+        console.log(Object.keys(object));
+        //8. Сделать функцию которая сможет делать срез данных с ассоциативного массива и вернуть средние значение (округленное до 2 цифр после запятой).
+        console.log('8. Сделать функцию которая сможет делать срез данных с ассоциативного массива и вернуть средние значение');
+
+        let testData = [{ "name": "Vasya", "email": "vasya@example.com", "age": 20, "skills": { "php": 0, "js": -1, "madness": 10, "rage": 10 } }, { "name": "Dima", "email": "dima@example.com", "age": 34, "skills": { "php": 5, "js": 7, "madness": 3, "rage": 2 } }, { "name": "Colya", "email": "colya@example.com", "age": 46, "skills": { "php": 8, "js": -2, "madness": 1, "rage": 4 } }, { "name": "Misha", "email": "misha@example.com", "age": 16, "skills": { "php": 6, "js": 6, "madness": 5, "rage": 2 } }, { "name": "Ashan", "email": "ashan@example.com", "age": 99, "skills": { "php": 0, "js": 10, "madness": 10, "rage": 1 } }, { "name": "Rafshan", "email": "rafshan@example.com", "age": 11, "skills": { "php": 0, "js": 0, "madness": 0, "rage": 10 } }]
+        var middle = testData[Math.round((testData.length - 1) / 2)];
+        console.log(middle);
+
+        //9. Создайте прототип для String toTitleCase каждый первый символ строки переводит в верхний регистр. 
+        console.log('9. Создайте прототип для String toTitleCase каждый первый символ строки переводит в верхний регистр');
+
+        function toTitleCase(str) {
+            return str.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
+        }
+        let x = 'test task'
+        console.log(toTitleCase(x));
+
+        //10. Создайте прототип который удаляет дубликаты из строки. Пример:
+        console.log('10. Создайте прототип который удаляет дубликаты из строки.');
+        let testX = "Int32 Int32 Int32 Int32 Int32 Int32 Int32 Int32 Int32 Double Double Double";
+        function removeDuplicate(arr) {
+            var obj = {};
+            var ret_arr = [];
+            for (var i = 0; i < arr.length; i++) {
+                obj[arr[i]] = true;
+            }
+            for (var key in obj) {
+                ret_arr.push(key);
+            }
+            return ret_arr;
+        }
+        console.log(removeDuplicate(testX));
+       // 11. Напишите методы добавления / удаления строчки внизу таблицы с текстом 'Row{N} cell{K}'
+       //(N / K динамические числа пример Row{ 3} cell{ 1}, Row{ 3} cell{ 2}..., то есть если количество
+       // колонок в одной строчке будет изменено ваш код должен работать)
+       console.log(' Напишите методы добавления / удаления строчки внизу таблицы с текстом ');
+
+
+
+
+
+    </script>
+</body>
+
+</html>
